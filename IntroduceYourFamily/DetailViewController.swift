@@ -9,12 +9,28 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var familyMemberName: UILabel!
+    @IBOutlet weak var familyMemberInfo: UILabel!
+    @IBOutlet weak var familyMemberPicture: UIImageView!
+    var familyMember: FamilyMember?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let familyMemberStuff = familyMember {
+            print(familyMemberStuff.name)
+            print(familyMemberStuff.photoName)
+            familyMemberName.text = familyMemberStuff.name
+            familyMemberPicture.image = UIImage(named: familyMemberStuff.photoName)
+        }
         // Do any additional setup after loading the view.
     }
     
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        familyMemberName.text = familyMember?.name
+//    }
+//
 
     /*
     // MARK: - Navigation
