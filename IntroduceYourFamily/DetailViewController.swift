@@ -17,21 +17,22 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let familyMemberStuff = familyMember {
-            print(familyMemberStuff.name)
-            print(familyMemberStuff.photoName)
-            familyMemberName.text = familyMemberStuff.name
-            familyMemberPicture.image = UIImage(named: familyMemberStuff.photoName)
-        }
         // Do any additional setup after loading the view.
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        familyMemberName.text = familyMember?.name
-//    }
-//
-
+    override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+        if let familyMemberStuff = familyMember {
+            familyMemberName.text = familyMemberStuff.name
+            familyMemberPicture.image = UIImage(named: familyMemberStuff.photoName)
+            familyMemberInfo.text = familyMemberStuff.info
+        }
+    }
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

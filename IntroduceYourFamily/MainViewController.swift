@@ -20,13 +20,20 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "FamilyMemberDetailSegue", sender: UIButton())
         familyMember = raccoon
+        performSegue(withIdentifier: "FamilyMemberDetailSegue", sender: UIButton())
     }
+    
+    @IBAction func boomerButtonPressed(_ sender: Any) {
+        familyMember = boomer
+        performSegue(withIdentifier: "FamilyMemberDetailSegue", sender: UIButton())
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detailViewController = segue.destination as? DetailViewController {
             detailViewController.familyMember = familyMember
+            
         }
         
     }
