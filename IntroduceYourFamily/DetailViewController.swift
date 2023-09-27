@@ -9,7 +9,6 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var familyMemberName: UILabel!
     @IBOutlet weak var familyMemberInfo: UILabel!
     @IBOutlet weak var familyMemberPicture: UIImageView!
     var familyMember: FamilyMember?
@@ -23,7 +22,7 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
         if let familyMemberStuff = familyMember {
-            familyMemberName.text = familyMemberStuff.name
+            navigationItem.title = familyMemberStuff.name
             familyMemberPicture.image = UIImage(named: familyMemberStuff.photoName)
             familyMemberInfo.text = familyMemberStuff.info
         }

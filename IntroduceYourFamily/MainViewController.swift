@@ -29,6 +29,27 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "FamilyMemberDetailSegue", sender: UIButton())
     }
     
+    @IBAction func danielButtonPressed(_ sender: Any) {
+        familyMember = daniel
+        performSegue(withIdentifier: "FamilyMemberDetailSegue", sender: UIButton())
+    }
+    
+    @IBAction func michaelButtonPressed(_ sender: Any) {
+        familyMember = michael
+        performSegue(withIdentifier: "FamilyMemberDetailSegue", sender: UIButton())
+    }
+    
+    @IBAction func matthewButtonPressed(_ sender: Any) {
+        familyMember = matthew
+        performSegue(withIdentifier: "FamilyMemberDetailSegue", sender: UIButton())
+    }
+    
+    @IBAction func joshuaButtonPressed(_ sender: Any) {
+        familyMember = joshua
+        performSegue(withIdentifier: "FamilyMemberDetailSegue", sender: UIButton())
+    }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detailViewController = segue.destination as? DetailViewController {
