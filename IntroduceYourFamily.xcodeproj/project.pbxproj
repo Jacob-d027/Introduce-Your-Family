@@ -15,6 +15,7 @@
 		F24B44F52AC1CDED000555D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24B44F32AC1CDED000555D1 /* LaunchScreen.storyboard */; };
 		F24B44FD2AC1D45F000555D1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B44FC2AC1D45F000555D1 /* DetailViewController.swift */; };
 		F24B44FF2AC1D4D8000555D1 /* FamilyMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B44FE2AC1D4D8000555D1 /* FamilyMembers.swift */; };
+		F25D651F2AF60AF9001E0546 /* FamilyMemberListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D651E2AF60AF9001E0546 /* FamilyMemberListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F24B44F62AC1CDED000555D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24B44FC2AC1D45F000555D1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F24B44FE2AC1D4D8000555D1 /* FamilyMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMembers.swift; sourceTree = "<group>"; };
+		F25D651E2AF60AF9001E0546 /* FamilyMemberListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				F24B44F12AC1CDED000555D1 /* Assets.xcassets */,
 				F24B44FC2AC1D45F000555D1 /* DetailViewController.swift */,
 				F24B44FE2AC1D4D8000555D1 /* FamilyMembers.swift */,
+				F25D651E2AF60AF9001E0546 /* FamilyMemberListTableViewController.swift */,
 				F24B44F32AC1CDED000555D1 /* LaunchScreen.storyboard */,
 				F24B44F62AC1CDED000555D1 /* Info.plist */,
 			);
@@ -147,6 +150,7 @@
 				F24B44ED2AC1CDEC000555D1 /* MainViewController.swift in Sources */,
 				F24B44E92AC1CDEC000555D1 /* AppDelegate.swift in Sources */,
 				F24B44EB2AC1CDEC000555D1 /* SceneDelegate.swift in Sources */,
+				F25D651F2AF60AF9001E0546 /* FamilyMemberListTableViewController.swift in Sources */,
 				F24B44FD2AC1D45F000555D1 /* DetailViewController.swift in Sources */,
 				F24B44FF2AC1D4D8000555D1 /* FamilyMembers.swift in Sources */,
 			);
