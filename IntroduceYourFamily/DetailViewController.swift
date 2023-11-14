@@ -15,21 +15,17 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateView()
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
+    func updateView() {
         if let familyMemberStuff = familyMember {
             navigationItem.title = familyMemberStuff.name
             familyMemberPicture.image = UIImage(named: familyMemberStuff.photoName)
             familyMemberInfo.text = familyMemberStuff.info
         }
     }
-    
-    
-    
     
     
     /*

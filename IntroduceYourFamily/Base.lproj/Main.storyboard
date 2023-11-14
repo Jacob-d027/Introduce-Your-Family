@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--FamilyMember-->
+        <!--Family Member-->
         <scene sceneID="cL8-h2-ct9">
             <objects>
                 <viewController id="Poh-D7-KDY" customClass="DetailViewController" customModule="IntroduceYourFamily" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                             <constraint firstItem="5dx-zG-Hkw" firstAttribute="height" secondItem="PEp-dE-fCG" secondAttribute="height" multiplier="0.45" id="rQ7-G4-usN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="FamilyMember" id="ovs-Of-v88"/>
+                    <navigationItem key="navigationItem" title="Family Member" id="ovs-Of-v88"/>
                     <connections>
                         <outlet property="familyMemberInfo" destination="aiX-69-Yz6" id="cOR-G7-CNg"/>
                         <outlet property="familyMemberPicture" destination="5dx-zG-Hkw" id="tfD-OU-cvo"/>
@@ -84,7 +84,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Poh-D7-KDY" kind="show" id="C2L-8A-CjJ"/>
+                                    <segue destination="Poh-D7-KDY" kind="show" destinationCreationSelector="showFamilyDetail:sender:" id="C2L-8A-CjJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

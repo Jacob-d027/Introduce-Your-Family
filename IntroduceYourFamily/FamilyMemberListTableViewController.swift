@@ -48,10 +48,19 @@ class FamilyMemberListTableViewController: UITableViewController {
         
         return cell
     }
-
+    
     @IBSegueAction func showFamilyDetail(_ coder: NSCoder, sender: Any?) -> DetailViewController? {
-        return <#DetailViewController(coder: coder)#>
+        guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
+            return nil
+        }
+        let familyMember = familyMembers[indexPath.row]
+        let detailVC = DetailViewController(coder: coder)
+        detailVC?.familyMember = familyMember
+        
+        return detailVC
     }
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

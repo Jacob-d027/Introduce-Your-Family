@@ -19,12 +19,12 @@ class ViewController: UIViewController {
     }
 
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let detailViewController = segue.destination as? DetailViewController {
-            detailViewController.familyMember = familyMember
-            
-        }
-        
-    }
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let detailViewController = segue.destination as? DetailViewController {
+//            detailViewController.familyMember = familyMember
+//            
+//        }
+//        
+//    }
+//    
 }
